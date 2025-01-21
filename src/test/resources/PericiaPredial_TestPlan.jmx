@@ -79,7 +79,7 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="http://localhost:8080">
+        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="http://localhost:8080" enabled="true">
           <stringProp name="HTTPSampler.domain">${BASE_URL}</stringProp>
           <stringProp name="HTTPSampler.port">${PORT}</stringProp>
           <stringProp name="HTTPSampler.protocol">${SCHEMA}</stringProp>
@@ -90,7 +90,7 @@
           <stringProp name="HTTPSampler.implementation"></stringProp>
         </ConfigTestElement>
         <hashTree/>
-        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
           <collectionProp name="HeaderManager.headers">
             <elementProp name="" elementType="Header">
               <stringProp name="Header.name">Content-Type</stringProp>
@@ -103,24 +103,24 @@
           </collectionProp>
         </HeaderManager>
         <hashTree/>
-        <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager">
+        <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="true">
           <boolProp name="clearEachIteration">false</boolProp>
           <boolProp name="useExpires">true</boolProp>
           <boolProp name="CacheManager.controlledByThread">false</boolProp>
         </CacheManager>
         <hashTree/>
-        <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager">
+        <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
           <collectionProp name="CookieManager.cookies"/>
           <boolProp name="CookieManager.clearEachIteration">false</boolProp>
           <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
         </CookieManager>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="FLUXO CRIAR">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="FLUXO CRIAR" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="CRIAR ACOMPANHANTES">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="CRIAR ACOMPANHANTES" enabled="true">
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-1850619319">Perícia Predial API - Plano de Teste</stringProp>
@@ -129,7 +129,7 @@
             </collectionProp>
           </ModuleController>
           <hashTree/>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="CRIAR ATIVIDADE">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="CRIAR ATIVIDADE" enabled="true">
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-1850619319">Perícia Predial API - Plano de Teste</stringProp>
@@ -138,7 +138,7 @@
             </collectionProp>
           </ModuleController>
           <hashTree/>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="CRIAR CLIENTE">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="CRIAR CLIENTE" enabled="true">
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-1850619319">Perícia Predial API - Plano de Teste</stringProp>
@@ -147,7 +147,7 @@
             </collectionProp>
           </ModuleController>
           <hashTree/>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="CRIAR SUB ATIVIDADE">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="CRIAR SUB ATIVIDADE" enabled="true">
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-1850619319">Perícia Predial API - Plano de Teste</stringProp>
@@ -156,7 +156,7 @@
             </collectionProp>
           </ModuleController>
           <hashTree/>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="CRIAR FUNCIONARIO">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="CRIAR FUNCIONARIO" enabled="true">
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-1850619319">Perícia Predial API - Plano de Teste</stringProp>
@@ -165,7 +165,7 @@
             </collectionProp>
           </ModuleController>
           <hashTree/>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="CRIAR GRUPO CLIENTE">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="CRIAR GRUPO CLIENTE" enabled="true">
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-1850619319">Perícia Predial API - Plano de Teste</stringProp>
@@ -174,7 +174,7 @@
             </collectionProp>
           </ModuleController>
           <hashTree/>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="CRIAR VISITA">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="CRIAR VISITA" enabled="true">
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-1850619319">Perícia Predial API - Plano de Teste</stringProp>
@@ -184,12 +184,12 @@
           </ModuleController>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="FLUXO CRIAR MULTIPOS">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="FLUXO CRIAR MULTIPOS" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="CRIAR MULTIPOS ACOMPANHANTES">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="CRIAR MULTIPOS ACOMPANHANTES" enabled="true">
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-1850619319">Perícia Predial API - Plano de Teste</stringProp>
@@ -198,7 +198,7 @@
             </collectionProp>
           </ModuleController>
           <hashTree/>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="CRIAR MULTIPOS  FUNCIONARIO">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="CRIAR MULTIPOS  FUNCIONARIO" enabled="true">
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-1850619319">Perícia Predial API - Plano de Teste</stringProp>
@@ -208,12 +208,12 @@
           </ModuleController>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="FLUXO LISTAR">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="FLUXO LISTAR" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="LISTAR ACOMPANHANTES">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="LISTAR ACOMPANHANTES" enabled="true">
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-1850619319">Perícia Predial API - Plano de Teste</stringProp>
@@ -222,7 +222,7 @@
             </collectionProp>
           </ModuleController>
           <hashTree/>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="LISTAR ATIVIDADE">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="LISTAR ATIVIDADE" enabled="true">
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-1850619319">Perícia Predial API - Plano de Teste</stringProp>
@@ -231,7 +231,7 @@
             </collectionProp>
           </ModuleController>
           <hashTree/>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="LISTAR CLIENTE">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="LISTAR CLIENTE" enabled="true">
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-1850619319">Perícia Predial API - Plano de Teste</stringProp>
@@ -240,7 +240,7 @@
             </collectionProp>
           </ModuleController>
           <hashTree/>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="LISTAR SUB ATIVIDADE">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="LISTAR SUB ATIVIDADE" enabled="true">
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-1850619319">Perícia Predial API - Plano de Teste</stringProp>
@@ -249,7 +249,7 @@
             </collectionProp>
           </ModuleController>
           <hashTree/>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="LISTAR FUNCIONARIO">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="LISTAR FUNCIONARIO" enabled="true">
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-1850619319">Perícia Predial API - Plano de Teste</stringProp>
@@ -258,7 +258,7 @@
             </collectionProp>
           </ModuleController>
           <hashTree/>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="LISTAR GRUPO CLIENTE">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="LISTAR GRUPO CLIENTE" enabled="true">
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-1850619319">Perícia Predial API - Plano de Teste</stringProp>
@@ -267,7 +267,7 @@
             </collectionProp>
           </ModuleController>
           <hashTree/>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="LISTAR VISITA">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="LISTAR VISITA" enabled="true">
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-1850619319">Perícia Predial API - Plano de Teste</stringProp>
@@ -277,12 +277,12 @@
           </ModuleController>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="FLUXO BUSCAR ID">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="FLUXO BUSCAR ID" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="BUSCAR ID ACOMPANHANTES">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="BUSCAR ID ACOMPANHANTES" enabled="true">
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-1850619319">Perícia Predial API - Plano de Teste</stringProp>
@@ -291,7 +291,7 @@
             </collectionProp>
           </ModuleController>
           <hashTree/>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="BUSCAR ID ATIVIDADE">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="BUSCAR ID ATIVIDADE" enabled="true">
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-1850619319">Perícia Predial API - Plano de Teste</stringProp>
@@ -300,7 +300,7 @@
             </collectionProp>
           </ModuleController>
           <hashTree/>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="BUSCAR ID CLIENTE">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="BUSCAR ID CLIENTE" enabled="true">
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-1850619319">Perícia Predial API - Plano de Teste</stringProp>
@@ -309,7 +309,7 @@
             </collectionProp>
           </ModuleController>
           <hashTree/>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="BUSCAR ID SUB ATIVIDADE">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="BUSCAR ID SUB ATIVIDADE" enabled="true">
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-1850619319">Perícia Predial API - Plano de Teste</stringProp>
@@ -318,7 +318,7 @@
             </collectionProp>
           </ModuleController>
           <hashTree/>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="BUSCAR ID FUNCIONARIO">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="BUSCAR ID FUNCIONARIO" enabled="true">
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-1850619319">Perícia Predial API - Plano de Teste</stringProp>
@@ -327,7 +327,7 @@
             </collectionProp>
           </ModuleController>
           <hashTree/>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="BUSCAR ID GRUPO CLIENTE">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="BUSCAR ID GRUPO CLIENTE" enabled="true">
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-1850619319">Perícia Predial API - Plano de Teste</stringProp>
@@ -336,7 +336,7 @@
             </collectionProp>
           </ModuleController>
           <hashTree/>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="BUSCAR ID VISITA">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="BUSCAR ID VISITA" enabled="true">
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-1850619319">Perícia Predial API - Plano de Teste</stringProp>
@@ -346,12 +346,12 @@
           </ModuleController>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="ATUALIZAR CRIAR">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="ATUALIZAR CRIAR" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="ATUALIZAR ACOMPANHANTES">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="ATUALIZAR ACOMPANHANTES" enabled="true">
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-1850619319">Perícia Predial API - Plano de Teste</stringProp>
@@ -360,7 +360,7 @@
             </collectionProp>
           </ModuleController>
           <hashTree/>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="CRIAR ATIVIDADE">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="CRIAR ATIVIDADE" enabled="true">
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-1850619319">Perícia Predial API - Plano de Teste</stringProp>
@@ -369,7 +369,7 @@
             </collectionProp>
           </ModuleController>
           <hashTree/>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="CRIAR CLIENTE">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="CRIAR CLIENTE" enabled="true">
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-1850619319">Perícia Predial API - Plano de Teste</stringProp>
@@ -378,7 +378,7 @@
             </collectionProp>
           </ModuleController>
           <hashTree/>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="CRIAR SUB ATIVIDADE">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="CRIAR SUB ATIVIDADE" enabled="true">
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-1850619319">Perícia Predial API - Plano de Teste</stringProp>
@@ -387,7 +387,7 @@
             </collectionProp>
           </ModuleController>
           <hashTree/>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="CRIAR FUNCIONARIO">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="CRIAR FUNCIONARIO" enabled="true">
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-1850619319">Perícia Predial API - Plano de Teste</stringProp>
@@ -396,7 +396,7 @@
             </collectionProp>
           </ModuleController>
           <hashTree/>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="CRIAR GRUPO CLIENTE">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="CRIAR GRUPO CLIENTE" enabled="true">
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-1850619319">Perícia Predial API - Plano de Teste</stringProp>
@@ -405,7 +405,7 @@
             </collectionProp>
           </ModuleController>
           <hashTree/>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="CRIAR VISITA">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="CRIAR VISITA" enabled="true">
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-1850619319">Perícia Predial API - Plano de Teste</stringProp>
@@ -502,12 +502,12 @@
           <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
         </CookieManager>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="FLUXO CRIAR">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="FLUXO CRIAR" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="CRIAR ACOMPANHANTES">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="CRIAR ACOMPANHANTES" enabled="true">
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-1850619319">Perícia Predial API - Plano de Teste</stringProp>
@@ -1227,9 +1227,9 @@
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="ACOMPANHENTES"/>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="ACOMPANHENTES" enabled="true"/>
       <hashTree>
-        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="/api/acompanhantes">
+        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="/api/acompanhantes" enabled="true">
           <stringProp name="HTTPSampler.path">${ACP}</stringProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
             <collectionProp name="Arguments.arguments"/>
@@ -1237,12 +1237,12 @@
           <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
         </ConfigTestElement>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="CRIAR">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="CRIAR" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Criar Acompanhante">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Criar Acompanhante" enabled="true">
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
@@ -1258,12 +1258,12 @@
           </HTTPSamplerProxy>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="CRIAR MULTIPLOS">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="CRIAR MULTIPLOS" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Criar Múltiplos Acompanhantes">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Criar Múltiplos Acompanhantes" enabled="true">
             <stringProp name="HTTPSampler.path">/batch</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
@@ -1283,12 +1283,12 @@
           </HTTPSamplerProxy>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="LISTAR">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="LISTAR" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Listar Acompanhantes">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Listar Acompanhantes" enabled="true">
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
@@ -1297,12 +1297,12 @@
           </HTTPSamplerProxy>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="BUSCAR ID">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="BUSCAR ID" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Buscar Acompanhante por ID">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Buscar Acompanhante por ID" enabled="true">
             <stringProp name="HTTPSampler.path">/ ${__threadNum}&quot;}</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
@@ -1312,12 +1312,12 @@
           </HTTPSamplerProxy>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="ATUALIZAR">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="ATUALIZAR" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Atualizar Acompanhante">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Atualizar Acompanhante" enabled="true">
             <stringProp name="HTTPSampler.path">/ ${__threadNum}</stringProp>
             <stringProp name="HTTPSampler.method">PUT</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
@@ -1334,12 +1334,12 @@
           </HTTPSamplerProxy>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="DELETAR">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="DELETAR" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Deletar Acompanhante">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Deletar Acompanhante" enabled="true">
             <stringProp name="HTTPSampler.path">/api/acompanhantes/1</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
@@ -1350,9 +1350,9 @@
           <hashTree/>
         </hashTree>
       </hashTree>
-      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="ATIVIDADE"/>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="ATIVIDADE" enabled="true"/>
       <hashTree>
-        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="/api/atividades">
+        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="/api/atividades" enabled="true">
           <stringProp name="HTTPSampler.path">${ATV}</stringProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
             <collectionProp name="Arguments.arguments"/>
@@ -1360,12 +1360,12 @@
           <stringProp name="HTTPSampler.implementation"></stringProp>
         </ConfigTestElement>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="CRIAR">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="CRIAR" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Criar Atividade">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Criar Atividade" enabled="true">
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
@@ -1381,12 +1381,12 @@
           </HTTPSamplerProxy>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="LISTAR">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="LISTAR" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Listar Atividades">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Listar Atividades" enabled="true">
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
@@ -1395,12 +1395,12 @@
           </HTTPSamplerProxy>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="BUSCAR ID">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="BUSCAR ID" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Buscar Atividade por ID">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Buscar Atividade por ID" enabled="true">
             <stringProp name="HTTPSampler.path">/ ${__threadNum}</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
@@ -1410,12 +1410,12 @@
           </HTTPSamplerProxy>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="ATUALIZAR">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="ATUALIZAR" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Atualizar Atividade">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Atualizar Atividade" enabled="true">
             <stringProp name="HTTPSampler.path">/ ${__threadNum}</stringProp>
             <stringProp name="HTTPSampler.method">PUT</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
@@ -1432,12 +1432,12 @@
           </HTTPSamplerProxy>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="DELETAR">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="DELETAR" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Deletar Atividade">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Deletar Atividade" enabled="true">
             <stringProp name="HTTPSampler.path">/api/atividades/1</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
@@ -1448,9 +1448,9 @@
           <hashTree/>
         </hashTree>
       </hashTree>
-      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="CLIENTE"/>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="CLIENTE" enabled="true"/>
       <hashTree>
-        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="/api/clientes">
+        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="/api/clientes" enabled="true">
           <stringProp name="HTTPSampler.path">${CLT}</stringProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
             <collectionProp name="Arguments.arguments"/>
@@ -1458,12 +1458,12 @@
           <stringProp name="HTTPSampler.implementation"></stringProp>
         </ConfigTestElement>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="CRIAR">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="CRIAR" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Criar Cliente">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Criar Cliente" enabled="true">
             <stringProp name="HTTPSampler.path">/ ${__threadNum}</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
@@ -1480,12 +1480,12 @@
           </HTTPSamplerProxy>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="LISTAR">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="LISTAR" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Listar Clientes">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Listar Clientes" enabled="true">
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
@@ -1494,12 +1494,12 @@
           </HTTPSamplerProxy>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="BUSCAR ID">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="BUSCAR ID" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Buscar Cliente por ID">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Buscar Cliente por ID" enabled="true">
             <stringProp name="HTTPSampler.path">/ ${__threadNum}.1</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
@@ -1509,12 +1509,12 @@
           </HTTPSamplerProxy>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="ATUALIZAR">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="ATUALIZAR" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Atualizar Cliente">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Atualizar Cliente" enabled="true">
             <stringProp name="HTTPSampler.path">/ ${__threadNum}.1</stringProp>
             <stringProp name="HTTPSampler.method">PUT</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
@@ -1531,12 +1531,12 @@
           </HTTPSamplerProxy>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="DELETAR">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="DELETAR" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Deletar Cliente">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Deletar Cliente" enabled="true">
             <stringProp name="HTTPSampler.path">/api/clientes/1.1</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
@@ -1547,9 +1547,9 @@
           <hashTree/>
         </hashTree>
       </hashTree>
-      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="SUB ATIVIDADE"/>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="SUB ATIVIDADE" enabled="true"/>
       <hashTree>
-        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="/api/subatividade">
+        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="/api/subatividade" enabled="true">
           <stringProp name="HTTPSampler.path">${SUB_ATV}</stringProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
             <collectionProp name="Arguments.arguments"/>
@@ -1557,12 +1557,12 @@
           <stringProp name="HTTPSampler.implementation"></stringProp>
         </ConfigTestElement>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="CRIAR">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="CRIAR" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Criar SubAtividade">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Criar SubAtividade" enabled="true">
             <stringProp name="HTTPSampler.path">/ ${__threadNum}</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
@@ -1579,12 +1579,12 @@
           </HTTPSamplerProxy>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="LISTAR">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="LISTAR" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Listar SubAtividades">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Listar SubAtividades" enabled="true">
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
@@ -1593,12 +1593,12 @@
           </HTTPSamplerProxy>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="BUSCAR ID">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="BUSCAR ID" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Buscar SubAtividade por ID">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Buscar SubAtividade por ID" enabled="true">
             <stringProp name="HTTPSampler.path">/ ${__threadNum}.1</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
@@ -1608,12 +1608,12 @@
           </HTTPSamplerProxy>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="ATUALIZAR">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="ATUALIZAR" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Atualizar SubAtividade">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Atualizar SubAtividade" enabled="true">
             <stringProp name="HTTPSampler.path">/ ${__threadNum}.1</stringProp>
             <stringProp name="HTTPSampler.method">PUT</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
@@ -1630,12 +1630,12 @@
           </HTTPSamplerProxy>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="DELETAR">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="DELETAR" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Deletar SubAtividade">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Deletar SubAtividade" enabled="true">
             <stringProp name="HTTPSampler.path">/api/subatividades/1.1</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
@@ -1646,9 +1646,9 @@
           <hashTree/>
         </hashTree>
       </hashTree>
-      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="FUNCIONARIO"/>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="FUNCIONARIO" enabled="true"/>
       <hashTree>
-        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="/api/funcionarios">
+        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="/api/funcionarios" enabled="true">
           <stringProp name="HTTPSampler.path">${FUN}</stringProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
             <collectionProp name="Arguments.arguments"/>
@@ -1656,12 +1656,12 @@
           <stringProp name="HTTPSampler.implementation"></stringProp>
         </ConfigTestElement>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="CRIAR">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="CRIAR" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Criar Funcionário">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Criar Funcionário" enabled="true">
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
@@ -1677,12 +1677,12 @@
           </HTTPSamplerProxy>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="CRIAR MULTIPLOS">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="CRIAR MULTIPLOS" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Criar Múltiplos Funcionários">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Criar Múltiplos Funcionários" enabled="true">
             <stringProp name="HTTPSampler.path">/batch</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
@@ -1702,12 +1702,12 @@
           </HTTPSamplerProxy>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="LISTAR">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="LISTAR" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Listar Funcionários">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Listar Funcionários" enabled="true">
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
@@ -1716,12 +1716,12 @@
           </HTTPSamplerProxy>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="BUSCAR ID">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="BUSCAR ID" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Buscar Funcionário por ID">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Buscar Funcionário por ID" enabled="true">
             <stringProp name="HTTPSampler.path">/ ${__threadNum}</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
@@ -1731,12 +1731,12 @@
           </HTTPSamplerProxy>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="ATUALIZAR">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="ATUALIZAR" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Atualizar Funcionário">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Atualizar Funcionário" enabled="true">
             <stringProp name="HTTPSampler.path">/ ${__threadNum}</stringProp>
             <stringProp name="HTTPSampler.method">PUT</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
@@ -1753,12 +1753,12 @@
           </HTTPSamplerProxy>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="DELETAR">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="DELETAR" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Deletar Funcionário">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Deletar Funcionário" enabled="true">
             <stringProp name="HTTPSampler.path">/api/funcionarios/1</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
@@ -1769,9 +1769,9 @@
           <hashTree/>
         </hashTree>
       </hashTree>
-      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="GRUPO CLIENTE"/>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="GRUPO CLIENTE" enabled="true"/>
       <hashTree>
-        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="/api/grupocliente">
+        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="/api/grupocliente" enabled="true">
           <stringProp name="HTTPSampler.path">${G_CLT}</stringProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
             <collectionProp name="Arguments.arguments"/>
@@ -1779,12 +1779,12 @@
           <stringProp name="HTTPSampler.implementation"></stringProp>
         </ConfigTestElement>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="CRIAR">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="CRIAR" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Criar Grupo Cliente">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Criar Grupo Cliente" enabled="true">
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
@@ -1800,12 +1800,12 @@
           </HTTPSamplerProxy>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="LISTAR">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="LISTAR" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Listar Grupos Cliente">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Listar Grupos Cliente" enabled="true">
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
@@ -1814,12 +1814,12 @@
           </HTTPSamplerProxy>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="BUSCAR ID">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="BUSCAR ID" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Buscar Grupo Cliente por ID">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Buscar Grupo Cliente por ID" enabled="true">
             <stringProp name="HTTPSampler.path">/ ${__threadNum}</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
@@ -1829,12 +1829,12 @@
           </HTTPSamplerProxy>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="ATUALIZAR">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="ATUALIZAR" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Atualizar Grupo Cliente">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Atualizar Grupo Cliente" enabled="true">
             <stringProp name="HTTPSampler.path">/ ${__threadNum}</stringProp>
             <stringProp name="HTTPSampler.method">PUT</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
@@ -1851,12 +1851,12 @@
           </HTTPSamplerProxy>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="DELETAR">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="DELETAR" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Deletar Grupo Cliente">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Deletar Grupo Cliente" enabled="true">
             <stringProp name="HTTPSampler.path">/api/grupocliente/1</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
@@ -1867,9 +1867,9 @@
           <hashTree/>
         </hashTree>
       </hashTree>
-      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="VISITA"/>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="VISITA" enabled="true"/>
       <hashTree>
-        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="/api/visitas">
+        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="/api/visitas" enabled="true">
           <stringProp name="HTTPSampler.path">${VIS}</stringProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
             <collectionProp name="Arguments.arguments"/>
@@ -1877,12 +1877,12 @@
           <stringProp name="HTTPSampler.implementation"></stringProp>
         </ConfigTestElement>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="CRIAR">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="CRIAR" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Criar Visita">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Criar Visita" enabled="true">
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
@@ -1908,12 +1908,12 @@
           </HTTPSamplerProxy>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="LISTAR">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="LISTAR" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Listar Visitas">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Listar Visitas" enabled="true">
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
@@ -1922,12 +1922,12 @@
           </HTTPSamplerProxy>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="BUSCAR ID">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="BUSCAR ID" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Buscar Visita por ID">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Buscar Visita por ID" enabled="true">
             <stringProp name="HTTPSampler.path">/ ${__threadNum}</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
@@ -1937,12 +1937,12 @@
           </HTTPSamplerProxy>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="ATUALIZAR">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="ATUALIZAR" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Atualizar Visita">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Atualizar Visita" enabled="true">
             <stringProp name="HTTPSampler.path">/ ${__threadNum}</stringProp>
             <stringProp name="HTTPSampler.method">PUT</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
@@ -1969,12 +1969,12 @@
           </HTTPSamplerProxy>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="DELETAR">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="DELETAR" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Deletar Visita">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Deletar Visita" enabled="true">
             <stringProp name="HTTPSampler.path">/api/visitas/1</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>

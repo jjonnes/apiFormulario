@@ -34,7 +34,7 @@ build/
 
 ### interno ###
 src/main/resources/relatorios/
-src/main/resources/templates/modelo.docx
+src/main/resources/templates
 src/main/resources/application.properties
 src/main/java/periciapredial/ppcapi/controller/relatorio_mensal
 src/test/java/periciapredial/ppcapi/controller/relatorio_mensal
