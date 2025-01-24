@@ -1,49 +1,41 @@
 package periciapredial.ppcapi.service.interno;
 
-import jakarta.persistence.EntityNotFoundException;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import periciapredial.ppcapi.model.interno.Funcionario;
 import periciapredial.ppcapi.repository.interno.FuncionarioRepository;
+import periciapredial.ppcapi.service.abstracao.AbstractService;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Service
-public class FuncionarioService {
+public class FuncionarioService extends AbstractService<Funcionario, Long> {
 
-    @Autowired
-    private FuncionarioRepository funcionarioRepository;
+    public FuncionarioService(FuncionarioRepository funcionarioRepository) {
+        super(funcionarioRepository);
+    }
 
     public List<Funcionario> getAllFuncionarios() {
-        return funcionarioRepository.findAll();
+        return super.getAll();
     }
 
     public Funcionario getFuncionarioById(Long id) {
-        return funcionarioRepository.findById(id)
-                .orElseThrow(() -> new EntityNotFoundException("Funcionário não encontrado com ID: " + id));
+        return super.getById(id);
     }
 
     public Funcionario createFuncionario(Funcionario funcionario) {
-        return funcionarioRepository.save(funcionario);
+        return super.create(funcionario);
     }
 
     public List<Funcionario> createMultipleFuncionarios(List<Funcionario> funcionarios) {
-        return funcionarios
-                .stream()
-                .map(this::createFuncionario)
-                .collect(Collectors.toList());
+        return super.createMultiple(funcionarios);
     }
 
     public Funcionario updateFuncionario(Long id, Funcionario funcionario) {
-        Funcionario existingFuncionario = getFuncionarioById(id);
-        existingFuncionario.setNome(funcionario.getNome());
-        return funcionarioRepository.save(existingFuncionario);
+        return super.update(id, funcionario);
     }
 
     public void deleteFuncionario(Long id) {
-        Funcionario funcionario = getFuncionarioById(id);
-        funcionarioRepository.delete(funcionario);
+        super.delete(id);
+        ;
     }
 }

@@ -1,49 +1,44 @@
 package periciapredial.ppcapi.service.interno;
 
-import jakarta.persistence.EntityNotFoundException;
-import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import periciapredial.ppcapi.model.interno.Acompanhante;
 import periciapredial.ppcapi.repository.interno.AcompanhanteRepository;
+import periciapredial.ppcapi.service.abstracao.AbstractService;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Service
-public class AcompanhanteService {
+public class AcompanhanteService extends AbstractService<Acompanhante, Long> {
 
-    @Autowired
-    private AcompanhanteRepository acompanhanteRepository;
+    // @Autowired
+    public AcompanhanteService(AcompanhanteRepository acompanhanteRepository) {
+        super(acompanhanteRepository);
+    }
 
     public List<Acompanhante> getAllAcompanhantes() {
-        return acompanhanteRepository.findAll();
+        return super.getAll();
     }
 
     public Acompanhante getAcompanhanteById(Long id) {
-        return acompanhanteRepository.findById(id)
-                .orElseThrow(() -> new EntityNotFoundException("Acompanhante não encontrado com ID: " + id));
+        return super.getById(id);
     }
 
     public Acompanhante createAcompanhante(Acompanhante acompanhante) {
-        return acompanhanteRepository.save(acompanhante);
+        return super.create(acompanhante);
     }
 
     public List<Acompanhante> createMultipleAcompanhantes(List<Acompanhante> acompanhante) {
-        return acompanhante
-                .stream()
-                .map(this::createAcompanhante)
-                .collect(Collectors.toList());
+        return super.createMultiple(acompanhante);
     }
 
     public Acompanhante updateAcompanhante(Long id, Acompanhante acompanhante) {
-        Acompanhante existingAcompanhante = getAcompanhanteById(id);
-        existingAcompanhante.setNome(acompanhante.getNome());
-        return acompanhanteRepository.save(existingAcompanhante);
+        return super.update(id, acompanhante);
     }
 
     public void deleteAcompanhante(Long id) {
-        Acompanhante acompanhante = getAcompanhanteById(id);
-        acompanhanteRepository.delete(acompanhante);
+        super.delete(id);
+        ;
     }
 }
